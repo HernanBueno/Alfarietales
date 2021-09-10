@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal de alfarietales, donde se puede navegar a las demas secciones de la pagina">
+    <meta name="keywords" content="alfarietales, alfajores, venta, ecommerce, inicio, index, productos, contacto, quienes, somos, historia">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f46c1eddff.js" crossorigin="anonymous"></script>
+    <title>Inicio - Alfarietales</title>
+</head>
+
+
+<header class="fontOswald header headerIndex">
+    <div class="bgOpacidad">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid mqNav">
+                <img src="./img/logo-alfarietales-1.png" class=" me-2 header__logo" alt="Logo alfarietales" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav--button navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/quienes-somos.html">Quienes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a>
+
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contactanos</a></li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+        <h1 class="header__h1 tamañoFuente-25">ALFARIETALES</h1>
+        <h2 class="header__h2 tamañoFuente-15">Variedades de Alfajores</h2>
+    </div>
+</header>
+<hr>
+
+<body class="fontQuicksand ">
+    <div class="container">
+        <section class="seccionPrimera">
+            <div class="seccionPrimeraQSomos">
+                <h3>Quienes Somos</h3>
+                <p>Alfarietales es una empresa que se dedica a la venta de alfajores. Vendemos variadas marcas y tipos de alfajores, si quieres saber más sobre nosotros y nuestra historia hace click acá abajo</p>
+                <button>Ver Más</button>
+            </div>
+            <div class="seccionPrimeraContacto">
+
+                <button type="button">contacto</button>
+
+
+            </div>
+        </section>
+        <hr>
+        <section class="seccionSegunda d-flex justify-content-center">
+
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="cardSlider d-block">
+                            <div class="superior">
+                                <img src="img/tipos.jpg" alt="Diferentes tipos de alfajores">
+                            </div>
+
+                            <div class="inferior">
+                                <h3>Tipos de alfajores</h3>
+                                <button>ir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cardSlider d-block">
+                            <div class="superior">
+                                <img src="img/historia.jpg" alt="Fabrica de alfajores">
+                            </div>
+                            <div class="inferior">
+                                <h3>Historia del alfajor</h3>
+                                <button>ir</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cardSlider d-block">
+                            <div class="superior">
+                                <img src="img/productos.jpg" alt="Envases de diferentes marcas de alfajores">
+                            </div>
+                            <div class="inferior">
+                                <h3>Productos</h3>
+                                <button>ir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <hr>
+        <footer class="footer">
+            <div class="row d-flex justify-content-center">
+                <img src="./img/logo-alfarietales-1.png" alt="">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav--button fontOswald">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="pages/quienes-somos.html">Quienes Somos</a></li>
+                    <li><a href="pages/historia.html">Historia</a></li>
+                    <li><a href="pages/productos.html">Productos</a></li>
+                    <li><a href="pages/contacto.html">Contactanos</a></li>
+
+                </ul>
+            </nav>
+            <div class="footer--buttonRedes">
+                <a href=""><i class="fab footer--buttonRedes--fb fa-facebook-square"></i></a>
+                <a href=""><i class="fab footer--buttonRedes--ig fa-instagram-square"></i></a>
+                <a href=""><i class="fab footer--buttonRedes--tw fa-twitter-square"></i></a>
+            </div>
+            <p>Creado por Hernán Bueno</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

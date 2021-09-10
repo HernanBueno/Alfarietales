@@ -1,0 +1,32 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $white;
+    .error-logo {
+        height: 13rem;
+        width: 28rem;
+    }
+    .error-img {
+        width: auto;
+        height: 25rem;
+    }
+    .error-titulo {
+        font-size: 6rem;
+        text-align: center;
+        color: $color1;
+    }
+    .error-button {
+        background-color: $color1;
+        padding: 1rem 2rem;
+        font-size: 20px;
+        border: 1px solid $color1;
+        border-radius: 6px;
+        color: $white;
+        text-decoration: none;
+        margin-top: 2.5rem;
+    }
+}

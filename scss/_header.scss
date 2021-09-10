@@ -1,0 +1,94 @@
+.header {
+    width: 100% !important;
+    .header__h1 {
+        padding-top: 10rem;
+        margin-bottom: 2rem;
+    }
+    .header__h2 {
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 10rem;
+    }
+    span {
+        font-size: 4rem;
+        border: 1px solid $color1;
+        border-radius: 4px;
+        padding: 0.5rem;
+    }
+    img {
+        height: 10rem;
+        width: 24rem;
+        margin: 0;
+        padding: 0;
+    }
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 990px) {
+            .header__nav {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .mqNav {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.header__nav--background {
+    background-color: $color2;
+}
+
+.nav--button {
+    display: flex;
+    li {
+        list-style: none;
+        padding: 1rem 2rem;
+        margin-bottom: 0.5rem;
+        background-color: $color1;
+        text-align: center;
+        border: none;
+        @media (min-width: 990px) {
+            background-color: rgba(255, 255, 255, 0);
+            margin: 1rem 0.5rem;
+            border-bottom: 1px solid$color1;
+            text-shadow: 3px 3px 5px$color1;
+            position: relative;
+        }
+        &:hover {
+            box-shadow: 0px 6px 2px -2px rgba(53, 28, 117, 0.87);
+            -webkit-box-shadow: 0px 6px 2px -2px rgba(53, 28, 117, 0.87);
+            -moz-box-shadow: 0px 6px 2px -2px rgba(53, 28, 117, 0.87);
+            border-bottom: none;
+            transition: ease-in;
+        }
+        a {
+            color: $white;
+        }
+    }
+    a {
+        color: rgb(80, 79, 79);
+        list-style: none;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+}
+
+ul {
+    ul {
+        position: absolute;
+        display: none;
+        top: 5rem;
+        left: 0;
+        li {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1rem;
+            background-color: #414040
+        }
+    }
+}
