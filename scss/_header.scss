@@ -1,7 +1,7 @@
 .header {
     width: 100% !important;
     .header__h1 {
-        padding-top: 10rem;
+        padding-top: 2rem;
         margin-bottom: 2rem;
     }
     .header__h2 {
@@ -16,10 +16,9 @@
         padding: 0.5rem;
     }
     img {
-        height: 10rem;
-        width: 24rem;
-        margin: 0;
-        padding: 0;
+        height: 15rem;
+        width: auto;
+        margin: 0 1rem;
     }
     .header__nav {
         display: flex;
