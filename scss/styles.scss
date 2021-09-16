@@ -53,7 +53,8 @@ button {
 
 //index
 .headerIndex {
-    background: linear-gradient( 180deg, $color2, $color3);
+    background-image: url(../img/delicious-alfajores-concept-arrangement.jpg);
+    background: linear-gradient( 180deg, #dd1d4d96, #ea7d529f);
     min-height: 100vh;
     width: 100vw;
     h1,
@@ -107,9 +108,13 @@ button {
         align-items: center;
         margin-bottom: 1rem;
         height: 100%;
+        text-align: left;
         p,
         h3 {
             padding: 2rem 0;
+        }
+        h3 {
+            justify-content: flex-start;
         }
     }
     .seccionPrimeraContacto {
@@ -202,21 +207,27 @@ form {
     align-items: center;
     margin: 3rem;
     fieldset {
+        width: 60rem;
         padding: 3rem 5rem;
-        background-color: rgb(161, 147, 147);
-        border: 1px solid rgb(95, 85, 85);
+        background-color: rgb(219, 219, 219);
+        border: 1px solid rgb(193, 193, 193);
         border-radius: 30px;
     }
     input,
     textarea {
         border-radius: 6px;
+        background-color: rgb(231, 229, 229);
+        border: 0.5px solid rgb(193, 193, 193);
+        width: 100%;
+        padding: 0.5rem;
+    }
+    textarea {
+        max-height: 15rem;
     }
     label {
         font-size: 2rem;
         color: #351c75 !important;
-        font-weight: 500;
-        margin: 2rem 0;
-        text-decoration: underline;
+        font-weight: 700;
     }
 }
 

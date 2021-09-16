@@ -50,21 +50,28 @@
     <div class="container">
         <form class="textoFormulario">
             <fieldset>
-                <legend>Contacto</legend>
-                <div class="mb-3">
+
+                <div class="mb-2">
                     <label class="form-label" for="name">Nombre Y ápellido</label><br>
-                    <input class="form-control" type="text" name="name" id="name" placeholder="Juan Perez" required></div><br>
-                <div class="mb-3">
-                    <label class="form-label">Elegí una opción</label> <br>
-                    <input type="checkbox" id="opc1" name="opc1" value="Comprar">
-                    <label class="form-label" for="opc1"> Comprar</label><br>
-                    <input type="checkbox" id="opc2" name="opc2" value="Consultar">
-                    <label class="form-label" for="opc2"> Consultar</label></div><br>
-                <div class="mb-3"><label class="form-label" for="age">Edad</label><br>
-                    <input type="date" name="age" id="age" required></div><br>
-                <div class="mb-3"><label class="form-label" for="email">Correo Electrónico</label><br>
+                    <input type="text" name="name" id="name" placeholder="Juan Perez" required></div><br>
+
+
+                <div class="mb-2"><label class="form-label" for="email">Correo Electrónico</label><br>
                     <input type="email" name="email" id="email" placeholder="user@dominio.com" required><br>
                 </div>
+                <div class="text-center">
+                    <label class="form-label ">Elegí una opción</label> <br>
+                    <div class="d-flex flex-row justify-content-around">
+                        <div><input type="checkbox" id="opc1" name="opc1" value="Comprar">
+                            <label class="form-label" for="opc1"> Comprar</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="opc2" name="opc2" value="Consultar">
+                            <label class="form-label" for="opc2"> Consultar</label></div>
+                    </div>
+                </div><br>
+
+
                 <label for="message">Dejanos tu mensaje</label><br>
                 <textarea name="message" id="message" cols="30" rows="10" max-height="10"></textarea></fieldset><br>
             <button type="submit">Enviar
@@ -74,7 +81,7 @@
         <hr>
         <footer class="footer">
             <div class="row d-flex justify-content-center">
-                <img src="../img/logo-alfarietales-1.png" alt="Logo de alfarietales">
+                <img src="../img/logofooter.png" alt="Logo de alfarietales">
             </div>
             <nav class="footer__nav">
                 <ul class="footer__nav--button fontOswald">
