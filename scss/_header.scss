@@ -1,9 +1,14 @@
 .header {
     width: 100% !important;
-    background-image: url(../img/delicious-alfajores-concept-arrangement.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
+    button {
+        background-color: $color1;
+    }
+    .header-index {
+        background-image: url(../img/delicious-alfajores-concept-arrangement.jpg);
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+    }
     .header__h1 {
         padding-top: 2rem;
         margin-bottom: 2rem;
@@ -44,6 +49,12 @@
                     justify-content: space-between;
                 }
             }
+        }
+    }
+    @media (min-width: 990px) {
+        .mqCollapse {
+            display: flex;
+            justify-content: center;
         }
     }
 }

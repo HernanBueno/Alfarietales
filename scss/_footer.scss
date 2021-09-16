@@ -12,22 +12,15 @@
             .footer__nav {
                 .footer__nav--button {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: center;
                     margin: 2rem 0 1rem 0;
                     li {
                         list-style: none;
                         padding: 1rem 2rem;
                         background-color: $color1;
-                        transform: translateY(1);
-                        transition: transform 0.5s ease-in;
                         border: 1px solid $color1;
                         margin-right: 0.5rem;
-                        &:hover {
-                            transform: translateY(-1rem);
-                            box-shadow: none;
-                            border: 1px solid $color1;
-                        }
                     }
                     a {
                         color: $color-txt3;
@@ -35,12 +28,41 @@
                         font-size: 2rem;
                     }
                 }
+                @media (min-width: 540px) {
+                    .footer__nav--button {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 2rem 0 1rem 0;
+                        li {
+                            transform: translateY(1);
+                            transition: transform 0.5s ease-in;
+                        }
+                        &:hover {
+                            transform: translateY(-1rem);
+                            box-shadow: none;
+                            border: 1px solid $color1;
+                        }
+                    }
+                }
             }
             .footer--buttonRedes {
+                display: flex;
+                flex-direction: column;
                 i {
-                    font-size: 4rem;
                     color: $color2;
-                    margin: 1rem 2rem;
+                    font-size: 4rem;
+                    margin: 1rem 0;
+                }
+            }
+            @media (min-width: 540px) {
+                .footer--buttonRedes {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    i {
+                        margin: 1rem 2rem;
+                    }
                 }
             }
         }

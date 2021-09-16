@@ -207,11 +207,20 @@ form {
     align-items: center;
     margin: 3rem;
     fieldset {
-        width: 60rem;
-        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
         background-color: rgb(219, 219, 219);
         border: 1px solid rgb(193, 193, 193);
-        border-radius: 30px;
+        padding: 3rem 1rem;
+    }
+    @media (min-width:768px) {
+        fieldset {
+            padding: 3rem 5rem;
+            width: 60rem;
+            border-radius: 30px;
+        }
     }
     input,
     textarea {
