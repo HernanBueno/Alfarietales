@@ -136,7 +136,12 @@ button {
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
+}
+
+.cardSlider img {
+    width: 100%;
 }
 
 //productos
@@ -244,4 +249,22 @@ form {
     label {
         color: rgb(122, 118, 118);
     }
+}
+
+//Quienes somos
+.mapa {
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe {
+    width: 80%;
+    height: 25rem;
+}
+
+.body-quienessomos {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

@@ -124,14 +124,7 @@ ul ul {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin: 2rem 0 1rem 0; }
-      .footer .footer__nav .footer__nav--button li {
-        transform: translateY(1);
-        transition: transform 0.5s ease-in; }
-      .footer .footer__nav .footer__nav--button:hover {
-        transform: translateY(-1rem);
-        box-shadow: none;
-        border: 1px solid #351c75; } }
+      margin: 2rem 0 1rem 0; } }
   .footer .footer--buttonRedes {
     display: flex;
     flex-direction: column; }
@@ -287,7 +280,11 @@ button {
   @media (min-width: 768px) {
     .seccionSegunda {
       flex-direction: row;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      flex-wrap: wrap; } }
+
+.cardSlider img {
+  width: 100%; }
 
 .producto {
   width: 20rem;
@@ -372,3 +369,17 @@ form {
 
 .textoFormulario label {
   color: #7a7676; }
+
+.mapa {
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+  justify-content: center; }
+
+.mapa iframe {
+  width: 80%;
+  height: 25rem; }
+
+.body-quienessomos {
+  margin-left: 1rem;
+  margin-right: 1rem; }
